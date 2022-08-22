@@ -40,8 +40,6 @@ If any of your photos or videos are tagged as "favorites" in iCloud (meaning hav
 
 And you can adjust the "target_dir", "photos_dir" and "favorites_dir" variables to your liking in config.txt
 
-## FAQs
-
 ## Notes
 - You may experience throttling from iCloud if you download too many photos too often. I was able to download well over 1000 files during my initial testing. But after a lot of testing within that same day I noticed when running the app after a few hundred files the app would experience a time-out (and would quit).
 - If you set delete_downloaded_files=FALSE in config.txt, already downloaded files will be skipped and will not be re-downloaded

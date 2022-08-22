@@ -9,7 +9,6 @@ import os
 import re
 import glob
 from datetime import date, datetime
-from pprint import pprint
 
 
 class iCloudLess:
@@ -64,7 +63,7 @@ class iCloudLess:
                 print(f"({index+1}) " + Config.get("iCloud Credentials", "username"))
 
             account = int(click.prompt("Which account should we use?"))
-            print("Will use account number {account}")
+            print("Will use account number", account)
             config_index = account-1
 
         elif(len(config_files) == 1):
@@ -272,7 +271,7 @@ def main():
     print("Starting program...")
     i = iCloudLess()
     i.run()
-    print("Program completed")
+    print("Program completed. See run.log for details.")
 
 # Start of the app
 if __name__ == "__main__":
