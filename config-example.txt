@@ -1,0 +1,28 @@
+[iCloud Credentials]
+
+username=name@domain.com
+password=somepassword
+
+
+[Paths]
+
+# Top level ("target") directory on local file system where all photos will be stored. Requires trailing slash.
+target_dir=C:/Users/<name>/Pictures/
+
+# A sub-directory will be created within the target directory using this date format.
+run_dir_format: %%m-%%d-%%Y
+
+# Name of the sub-directory where all downloaded photos will be stored when the app runs. Requires trailing slash.
+photos_dir=photos/
+
+# Name of the sub directory where all downloaded favorites will be stored when the app runs. Requires trailing slash.
+favorites_dir=favorites/
+
+
+[Config]
+
+# Number of newest files (photos and videos) to leave in iCloud and the app will download the rest (the oldest files)
+num_files_to_keep_in_icloud=1000
+
+# Set to TRUE to have the app delete files it downloads from iCloud (frees up space on iCloud)
+delete_downloaded_files=TRUE
